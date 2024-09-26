@@ -1,0 +1,18 @@
+<div class="it-container-details-ip" *ngIf="data">
+  <div class="it-container-text-detail">
+    <p class="it-text-title">IP Address</p>
+    <p class="it-text-details" id="ip-address">{{ data.ip }}</p>
+  </div>
+  <div class="it-container-text-detail">
+    <p class="it-text-title">Location</p>
+    <p class="it-text-details" id="location">{{ data.location.country }}, {{ data.location.city }}</p>
+  </div>
+  <div class="it-container-text-detail">
+    <p class="it-text-title">Time Zone</p>
+    <p class="it-text-details" id="timezone">UTC {{ data.location.timezone }}</p>
+  </div>
+  <div class="it-container-text-detail">
+    <p class="it-text-title">ISP</p>
+    <p class="it-text-details" id="isp">{{ data.isp }}</p>
+  </div>
+</div>
