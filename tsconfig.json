@@ -9,9 +9,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "ip-tracker-ui-core": [
-        "dist/ip-tracker-ui-core/ip-tracker-ui-core",
-        "dist/ip-tracker-ui-core"
+      "@ip-tracker/ui-core": [
+        "./projects/ip-tracker-ui-core/src/public-api.ts"
       ]
     },
     "sourceMap": true,

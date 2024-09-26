@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "ip-tracker-ui-core:build": "ng build ip-tracker-ui-core",
+    "ip-tracker-ui-core:package": "npm run ip-tracker-ui-core:build & npm pack dist\\ip-tracker-ui-core",
     "test": "ng test"
   },
   "private": true,
