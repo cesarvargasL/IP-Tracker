@@ -1,2 +1,4 @@
 <router-outlet></router-outlet>
-<lib-ip-tracker-ui-core></lib-ip-tracker-ui-core>
+<lib-ip-tracker (ipDataChange)="onIpDataChange($event)"></lib-ip-tracker>
+<ip-tracker-information [data]="ipData"></ip-tracker-information>
+<ip-tracker-map [lat]="ipData?.location?.lat ?? null" [lng]="ipData?.location?.lng ?? null"></ip-tracker-map>

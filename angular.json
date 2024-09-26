@@ -11,9 +11,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -111,6 +108,11 @@
     },
     "ip-tracker-ui-core": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/ip-tracker-ui-core",
       "sourceRoot": "projects/ip-tracker-ui-core/src",
       "prefix": "lib",
