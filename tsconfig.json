@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "ip-tracker-ui-core": [
+        "dist/ip-tracker-ui-core/ip-tracker-ui-core",
+        "dist/ip-tracker-ui-core"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,

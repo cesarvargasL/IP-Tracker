@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a43a13a0-d7c0-4c73-a307-af4f60a10145"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -102,6 +105,37 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "ip-tracker-ui-core": {
+      "projectType": "library",
+      "root": "projects/ip-tracker-ui-core",
+      "sourceRoot": "projects/ip-tracker-ui-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ip-tracker-ui-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ip-tracker-ui-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ip-tracker-ui-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ip-tracker-ui-core/src/test.ts",
+            "tsConfig": "projects/ip-tracker-ui-core/tsconfig.spec.json",
+            "karmaConfig": "projects/ip-tracker-ui-core/karma.conf.js"
           }
         }
       }
