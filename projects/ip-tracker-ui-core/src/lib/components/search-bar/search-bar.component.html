@@ -2,7 +2,7 @@
   <div class="it-container-search">
     <h1 class="it-text-ip">IP Address Tracker</h1>
     <div class="it-container-input-ip">
-      <input class="it-container-input-text" type="text" placeholder="Search for any IP address or domain" #ipInput>
+      <input class="it-container-input-text" type="text" placeholder="Search for any IP address or domain" #ipInput (keyup.enter)="onSearch(ipInput.value)">
       <button type="button" class="it-button-input-text" (click)="onSearch(ipInput.value)">
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
           <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/>
