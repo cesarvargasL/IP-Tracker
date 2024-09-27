@@ -13,18 +13,19 @@
 
 <p>1. Clone project</p>
 
-
+```
 git clone https://github.com/cesarvargasL/IP-Tracker.git
-
+```
 <p>2. install</p>
 
-
+```
 npm install 
-
+```
 <p>3. Run project</p>
 
+```
 ng serve
-
+```
 
 
 
