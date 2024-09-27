@@ -4,9 +4,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="assets/screenshots/Desktop.png" alt="project-screenshot" width="400px" height="180px">
+<img src="src/assets/screenshots/Desktop.png" alt="project-screenshot" width="400px" height="180px">
 
-<img src="assets/screenshots/mobile.png" alt="project-screenshot" width="200px" height="350px">
+<img src="src/assets/screenshots/mobile.png" alt="project-screenshot" width="200px" height="350px">
 
 
 <h2>🛠️ Installation Steps:</h2>
